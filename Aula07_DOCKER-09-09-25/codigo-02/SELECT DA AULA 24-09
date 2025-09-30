@@ -1,0 +1,23 @@
+SELECT
+    produto_id,
+    valor_unitario,
+    data_venda
+FROM
+    vendas_itens
+WHERE
+    produto_id = 10;
+
+
+
+SELECT
+    venda_id,
+    produto_id,
+    valor_unitario,
+    valor_unitario * 1.10 AS valor_venda
+FROM
+    vendas_itens;
+
+
+SELECT * FROM vendas_itens
+WHERE valor_unitario >= 50 AND valor_unitario <= 100
+ORDER BY valor_unitario ASC;
